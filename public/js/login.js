@@ -14,7 +14,7 @@ async function handleSignup(event) {
     password: passwordValue,
   };
 
-  const response = await fetch('/api/signup', {
+  const response = await fetch('/api/users/signup', {
     body: JSON.stringify(newUser),
     method: 'POST',
     headers: {
@@ -42,7 +42,7 @@ async function handleLogin(event) {
     password: passwordValue,
   };
 
-  const response = await fetch('/api/login', {
+  const response = await fetch('/api/users/login', {
     body: JSON.stringify(loginUser),
     method: 'POST',
     headers: {
