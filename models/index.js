@@ -24,4 +24,4 @@ Flight.belongsToMany(User, {
 
 module.exports = { User, Flight, Trip };
 
-// module.exports = Trip;
+
