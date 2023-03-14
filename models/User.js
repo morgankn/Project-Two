@@ -29,6 +29,7 @@ User.init(
       },
     },
     sequelize,
+    modelName: 'users',
   }
 );
 

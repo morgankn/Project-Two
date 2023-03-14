@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { sequelize } = require('../config/connection');
 
 class Trip extends Model {}
 
@@ -17,19 +17,27 @@ Trip.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    //   user_id: {
-    //     type: DataTypes.INTEGER,
-    //     references: {
-    //       model: 'user',
-    //       key: 'id',
-    //     },
+    users_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'users',
+        key: 'id',
+      },
+    },
+    flights_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'flights',
+        key: 'id',
+        unique: false,
+      },
+    },
   },
   {
     sequelize,
     timestamps: false,
-    freezeTableName: true,
     underscored: true,
-    modelName: 'trip',
+    modelName: 'trips',
   }
 );
 
