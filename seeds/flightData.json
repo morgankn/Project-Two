@@ -1,0 +1,17 @@
+[
+    {
+        "departure": "Philadelphia",
+        "arrival": "Los Angeles",
+        "price": 300
+    },
+    {
+        "departure": "New York",
+        "arrival": "Miami",
+        "price": 200
+    },
+    {
+        "departure": "Nashville",
+        "arrival": "Chicago",
+        "price": 200
+    }
+]

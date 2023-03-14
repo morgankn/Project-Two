@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const User = require('../../models');
+const { User } = require('../../models');
 
 // localhost:3001/api/users
 router.post('/', async (req, res) => {
@@ -83,6 +83,7 @@ router.post('/logout', (req, res) => {
 
 router.get('/', async (req, res) => {
   try {
+    console.log('from the users get');
     const productData = await User.findAll();
     res.status(200).json(productData);
   } catch (err) {
