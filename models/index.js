@@ -24,4 +24,4 @@ const Trip = require('./Trip');
 
 module.exports = { User, Flight, Trip };
 
-// module.exports = Trip;
+

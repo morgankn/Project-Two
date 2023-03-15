@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const { sequelize } = require('../config/connection');
+const sequelize = require('../config/connection');
 
 class Flight extends Model {}
 
@@ -21,20 +21,19 @@ Flight.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    // user_id: {
-    //   type: DataTypes.INTEGER,
-    //   references: {
-    //     model: 'users',
-    //     key: 'id',
-    //   },
-    // },
+    users_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'users',
+        key: 'id',
+      },
+    },
   },
   {
     sequelize,
     timestamps: false,
-    freezeTableName: true,
     underscored: true,
-    modelName: 'flight',
+    modelName: 'flights',
   }
 );
 
@@ -46,3 +45,4 @@ module.exports = Flight;
 // 	"arrival_time": "2022-10-11T06:30:00",
 // 	"price": 100
 // }
+
