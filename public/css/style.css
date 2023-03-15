@@ -19,14 +19,27 @@
     justify-content: flex-start;
     background-color: var(--brown);
   }
+  .navbar-custom {
+    background-color: var(--cyan);
+  }
 
   h1 {
     font-family:'Goldman', cursive;
     color: var(--bright);
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+  }
+  #title {
+    color: var(--teal);
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
   }
 
-  .container {
+  #poster{
     display: flex;
+    justify-content: space-around;
     border: 2px solid var(--cream);
   }
 
@@ -36,4 +49,9 @@
     color: var(--chestnut);
     align-items: center;
     
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid var(--cream);
   }

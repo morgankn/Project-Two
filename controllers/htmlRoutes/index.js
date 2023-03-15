@@ -1,5 +1,6 @@
-// const axios = require('axios');
+const axios = require('axios');
 const router = require('express').Router();
+const authChecker = require('../../utils/auth.js');
 
 router.get('/', async (req, res) => {
   res.render('home', {
@@ -7,26 +8,51 @@ router.get('/', async (req, res) => {
   });
 });
 
+router.get('/flights', async (req, res) => {
+  res.render('flightinfo', {
+    loggedIn: req.session.loggedIn,
+  });
+});
+
 router.get('/login', async (req, res) => {
   res.render('login');
 });
-// router.get('/search/:searchFlight', authChecker, async (req, res) => {
-//   const { searchTerm } = req.params;
-//   const origin = doc.queryselector(userinput);
-//   const destination = doc.queryselector(userinput);
-//   const departureDate = doc.req.params;
-//   await axios.get(`https://app.goflightlabs.com/search-all-flights?access_key={process.env.API_KEY}&adults=1&${origin.val}&${destination.val}&${departureDate.val}&${currency.val}&${arriveTo.val}
+router.get('/search', authChecker, async (req, res) => {
+  let queryString = [];
+  const searchFlight = req.query.searchFlight;
+  if(searchFlight){
+    queryString.push(`searchFlight=${searchFlight}`);
+  }
+  const origin = req.query.origin;
+  if(origin){
+    queryString.push(`origin=${origin}`);
+  }
+  const destination = req.query.destination;
+  if(destination){
+    queryString.push(`destination=${destination}`);
+  }
+  const departureDate = req.query.departureDate;
+  if(departureDate){
+    queryString.push(`destinationDate=${destinationDate}`);
+  }
+  const arriveTo = req.query.arriveTo;
+  if(arriveTo){
+    queryString.push(`arriveTo=${arriveTo}`);
+  }
+  const currency =req.query.currency;
+  if(currency){
+    queryString.push(`currency=${currency}`);
+  }
+  const query = `?${queryString.join('&')}`;
+  await axios.get(`https://app.goflightlabs.com/search-all-flights${query}&access_key=${process.env.API_KEY}&adult=1`)
+  const flights = flightResponse.data.items.map((flight) => ({
+    id: flight.id,
+  }));
 
-//     `);
-
-//   const flight = flightResponse.data.items.map((flight) => ({
-//     id: flight.id,
-//   }));
-
-//   res.render('search', {
-//     flight,
-//   });
-// });
+  res.render('search', {
+    flights,
+  });
+});
 
 router.get('/logout', async (req, res) => {
   req.session.destroy();
