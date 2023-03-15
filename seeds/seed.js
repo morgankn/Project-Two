@@ -16,12 +16,35 @@ const seedDatabase = async () => {
   for (const flight of flightData) {
     await Flight.create({
       ...flight,
-      // users_id: users[Math.floor(Math.random() * users.length)].id,
+      // user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
 
-  await Trip.bulkCreate(tripData, {
-    returning: true,
+  await Trip.create({
+    name: 'Los Angeles Bacholerette',
+    description: 'Bacholerette',
+    user_id: 1,
+    flight_id: 1,
+  }).catch((err) => {
+    console.log(err);
+  });
+
+  await Trip.create({
+    name: 'Miami Wedding',
+    description: 'Wedding',
+    user_id: 2,
+    flight_id: 2,
+  }).catch((err) => {
+    console.log(err);
+  });
+
+  await Trip.create({
+    name: 'Chicago Baseball Game',
+    description: 'Baseball Game',
+    user_id: 3,
+    flight_id: 3,
+  }).catch((err) => {
+    console.log(err);
   });
 
   process.exit(0);

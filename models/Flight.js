@@ -21,7 +21,7 @@ Flight.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    // users_id: {
+    // user_id: {
     //   type: DataTypes.INTEGER,
     //   references: {
     //     model: 'users',
@@ -32,8 +32,9 @@ Flight.init(
   {
     sequelize,
     timestamps: false,
+    freezeTableName: true,
     underscored: true,
-    modelName: 'flights',
+    modelName: 'flight',
   }
 );
 

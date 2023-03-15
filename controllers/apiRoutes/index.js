@@ -7,6 +7,4 @@ router.use('/users', userRoutes);
 router.use('/flights', flightRoutes);
 router.use('/trips', tripRoutes);
 
-
-
 module.exports = router;

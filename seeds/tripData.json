@@ -2,19 +2,19 @@
     {
         "name": "Los Angeles Bacholerette",
         "description": "Bacholerette",
-        "users_id": 1,
-        "flights_id": 1
+        "user_id": 1,
+        "flight_id": 1
     },
     {
         "name": "Miami Wedding",
         "description": "Wedding",
-        "users_id": 2,
-        "flights_id": 2
+        "user_id": 2,
+        "flight_id": 2
     },
     {
         "name": "Chicago Baseball Game",
         "description": "Baseball Game",
-        "users_id": 3,
-        "flights_id": 3
+        "user_id": 3,
+        "flight_id": 3
     }
 ]
