@@ -1,3 +1,14 @@
-login comes here if user has no flights saved
+<div class="container">
+<div class="row">
 
-signup comes here
+{{#each flight}}
+<div class="card col-3" style="width: 18rem;">
+  <img src={{this.image}} class="card-img-top" alt="...">
+  <div class="card-body">
+    {{!-- <p class="card-title">{{this.origin}}</p>
+    <p class="card-text">{{this.arrival}}</p> --}}
+  </div>
+</div>
+{{/each}}
+</div>
+</div>

@@ -1,9 +1,7 @@
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
 
-// const { Model, DataTypes } = require('sequelize');
-// const sequelize = require('../config/connection');
-
-
-// class Flight extends Model {}
+class Flight extends Model {}
 
 Flight.init(
   {
@@ -23,13 +21,13 @@ Flight.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    // users_id: {
-    //   type: DataTypes.INTEGER,
-    //   references: {
-    //     model: 'users',
-    //     key: 'id',
-    //   },
-    // },
+    users_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'users',
+        key: 'id',
+      },
+    },
   },
   {
     sequelize,
