@@ -17,17 +17,18 @@ Trip.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    users_id: {
+    user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'users',
+        model: 'user',
         key: 'id',
+        unique: false,
       },
     },
-    flights_id: {
+    flight_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'flights',
+        model: 'flight',
         key: 'id',
         unique: false,
       },
@@ -36,8 +37,9 @@ Trip.init(
   {
     sequelize,
     timestamps: false,
+    freezeTableName: true,
     underscored: true,
-    modelName: 'trips',
+    modelName: 'trip',
   }
 );
 

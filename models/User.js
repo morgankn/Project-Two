@@ -29,7 +29,9 @@ User.init(
       },
     },
     sequelize,
-    modelName: 'users',
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'user',
   }
 );
 
