@@ -21,13 +21,13 @@ Flight.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    users_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'users',
-        key: 'id',
-      },
-    },
+    // user_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: 'users',
+    //     key: 'id',
+    //   },
+    // },
   },
   {
     sequelize,
