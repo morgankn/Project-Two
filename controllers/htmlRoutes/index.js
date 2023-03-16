@@ -19,6 +19,7 @@ router.get('/login', async (req, res) => {
   res.render('login');
 });
 router.get('/search', authChecker, async (req, res) => {
+  console.log(req.query);
   const queryString = [];
   const { searchFlight } = req.query;
   if (searchFlight) {
@@ -34,7 +35,7 @@ router.get('/search', authChecker, async (req, res) => {
   }
   const { departureDate } = req.query;
   if (departureDate) {
-    queryString.push(`destinationDate=${destinationDate}`);
+    queryString.push(`departureDate=${departureDate}`);
   }
   const { arriveTo } = req.query;
   if (arriveTo) {
@@ -45,10 +46,11 @@ router.get('/search', authChecker, async (req, res) => {
     queryString.push(`currency=${currency}`);
   }
   const query = `?${queryString.join('&')}`;
-  await axios.get(
-    `https://app.goflightlabs.com/search-all-flights${query}&access_key=${process.env.API_KEY}&adult=1`
+  const flightResponse = await axios.get(
+    `https://app.goflightlabs.com/search-all-flights${query}&access_key=${process.env.API_KEY}&adults=1`
   );
-  const flights = flightResponse.data.items.map((flight) => ({
+  console.log(flightResponse.data.data);
+  const flights = flightResponse.data.data.results.map((flight) => ({
     id: flight.id,
   }));
 
