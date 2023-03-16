@@ -1,7 +1,7 @@
 <div class="create-container">
     <h2>Create A Group Travel Plan</h2>
     <div class="dropdown-center">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  {{!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Where are you going?
   </button>
   <ul class="dropdown-menu">
@@ -31,6 +31,31 @@
     <li><a class="dropdown-item" href="#">DFW</a></li>
     <li><a class="dropdown-item" href="#">DEN</a></li>
   </ul>
+</div> --}}
+<label for="departure-select">Departing From:</label>
+
+<select id="departure">
+    <option value="kdkjdfdjkdsfjkh">--Please choose an option--</option>
+    <option value="ALB" class="data-code=ALB">ALB</option>
+    {{!-- <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option> --}}
+</select>
+<label for="arrival-select">Arriving To:</label>
+
+<select id="arrival">
+    <option value="">--Please choose an option--</option>
+    <option value="ABQ" class="data-code=ABQ">ABQ</option>
+    {{!-- <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option> --}}
+</select>
+<button id="find-button" class="find-button">Find Flights</button>
+<button id="example-button" class="button">Example Empty</button>
 </div>
-<button class="find-button">Find Flights</button>
-</div>
+<script
+      src="/js/search.js"></script>
