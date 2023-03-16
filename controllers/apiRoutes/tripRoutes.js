@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Trip } = require('../../models');
+const { User, Flight, Trip } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // localhost:3001/api/trips
@@ -70,7 +70,9 @@ router.put('/:id', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
   try {
-    const tripData = await Trip.findByPk(req.params.id);
+    const tripData = await Trip.findByPk(req.params.id, {
+      include: [User, Flight],
+    });
 
     if (!tripData) {
       res.status(404).json({ message: 'No trip found with this id!' });

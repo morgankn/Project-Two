@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User, Flight, Trip } = require('../../models');
 
 // localhost:3001/api/users
 router.post('/', async (req, res) => {
@@ -63,6 +63,7 @@ router.post('/login', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
+      console.log(req.session.logged_in);
 
       res.json({ user: userData, message: 'You are now logged in!' });
     });
@@ -93,7 +94,9 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
   try {
-    const userData = await User.findByPk(req.params.id);
+    const userData = await User.findByPk(req.params.id, {
+      include: Trip,
+    });
 
     if (!userData) {
       res.status(404).json({ message: 'No user found with this id!' });

@@ -52,6 +52,7 @@ async function handleLogin(event) {
 
   if (response.ok) {
     console.log('IT WORKED!');
+    document.location.replace('/flightinfo');
   } else {
     console.log('Dan, you screwed it up again');
   }

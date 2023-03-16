@@ -12,6 +12,7 @@ const seedDatabase = async () => {
     individualHooks: true,
     returning: true,
   });
+  // users();
 
   for (const flight of flightData) {
     await Flight.create({
@@ -19,12 +20,11 @@ const seedDatabase = async () => {
       // user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
-
   await Trip.create({
     name: 'Los Angeles Bacholerette',
     description: 'Bacholerette',
-    user_id: 1,
-    flight_id: 1,
+    userId: 1,
+    flightId: 1,
   }).catch((err) => {
     console.log(err);
   });
