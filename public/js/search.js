@@ -3,12 +3,8 @@ const searchFlight = async () => {
   const origin = document.querySelector('#departure').value;
   const destination = document.querySelector('#arrival').value;
   const departureDate = document.querySelector('#departure-date').value;
-  // const arriveTo = '';
-  // const currency = '';
   const queryString = `/search?origin=${origin}&destination=${destination}&departureDate=${departureDate}`;
-  const res = await fetch(queryString);
-  const result = await res.json();
-  console.log(result);
+  window.location.replace(queryString);
   // location.href = `/search?searchflight=${searchflight}&origin=${origin}&destination=${destination}&departureDate=${departureDate}&arriveTo=${arriveTo}&currency=${currency}`;
   // console.log('You went nowhere');
   // console.log(origin);

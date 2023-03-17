@@ -13,10 +13,10 @@ Flight.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // arrival_time: {
-    //   type: DataTypes.DATE,
-    //   allowNull: false,
-    // },
+    arrival_time: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
     price: {
       type: DataTypes.INTEGER,
       allowNull: false,

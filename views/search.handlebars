@@ -1,1 +1,5 @@
-<h1>This is search.handlebars</h1>
+{{#each flights as |flight|}}
+    {{#each flight.items as |item|}}
+        <pre>{{json item}}</pre>
+    {{/each}}
+{{/each}}

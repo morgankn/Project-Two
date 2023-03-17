@@ -47,15 +47,15 @@ router.get('/search', authChecker, async (req, res) => {
   }
   const query = `?${queryString.join('&')}`;
   const flightResponse = await axios.get(
-    `https://app.goflightlabs.com/search-all-flights${query}&access_key=${process.env.API_KEY}&adults=1`
+    `https://app.goflightlabs.com/search-best-flights${query}&access_key=${process.env.API_KEY}&adults=1`
   );
   console.log(flightResponse.data.data);
-  const flights = flightResponse.data.data.results.map((flight) => ({
-    id: flight.id,
-  }));
+  // const flights = flightResponse.data.data.results.map((flight) => ({
+  //   id: flight.id,
+  // }));
 
   res.render('search', {
-    flights,
+    flights: flightResponse.data.data.buckets,
   });
 });
 
