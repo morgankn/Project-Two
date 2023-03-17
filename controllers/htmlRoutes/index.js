@@ -50,11 +50,14 @@ router.get('/search', authChecker, async (req, res) => {
     `https://app.goflightlabs.com/search-best-flights${query}&access_key=${process.env.API_KEY}&adults=1`
   );
   console.log(flightResponse.data.data);
-  // const flights = flightResponse.data.data.results.map((flight) => ({
-  //   id: flight.id,
-  // }));
+  // const flights = flightResponse.data.data.buckets.map(
+  //   (flight) => ({
+  //     id: flight.id,
+  //   }),
+  //   await console.log(flights.id)
+  // );
 
-  res.render('search', {
+  res.render('searchResults', {
     flights: flightResponse.data.data.buckets,
   });
 });
@@ -64,4 +67,10 @@ router.get('/logout', async (req, res) => {
   res.redirect('/');
 });
 
+router.get('/dashboard', async (req, res) => {
+  res.render('dashboard', {
+    loggedIn: req.session.loggedIn,
+  });
+  
+});
 module.exports = router;
