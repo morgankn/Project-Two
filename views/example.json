@@ -1,0 +1,705 @@
+{
+  "success": true,
+  "data": {
+    "results": [
+      {
+        "id": "13870-2303212200--31669-0-11493-2303220030",
+        "legs": [
+          {
+            "id": "13870-2303212200--31669-0-11493-2303220030",
+            "origin": { "id": 13870, "name": "Madrid", "displayCode": "MAD" },
+            "destination": {
+              "id": 11493,
+              "name": "Rome Fiumicino",
+              "displayCode": "FCO"
+            },
+            "durationInMinutes": 150,
+            "stopCount": 0,
+            "isSmallestStops": true,
+            "departure": "2023-03-21T22:00:00",
+            "arrival": "2023-03-22T00:30:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [{ "id": -31669, "name": "Wizz Air" }],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "13870-11493-2303212200-2303220030--31669",
+                "origin": {
+                  "flightPlaceId": "MAD",
+                  "parent": {
+                    "flightPlaceId": "MAD",
+                    "name": "Madrid",
+                    "type": "City"
+                  },
+                  "name": "Madrid",
+                  "type": "Airport"
+                },
+                "destination": {
+                  "flightPlaceId": "FCO",
+                  "parent": {
+                    "flightPlaceId": "ROM",
+                    "name": "Rome",
+                    "type": "City"
+                  },
+                  "name": "Rome Fiumicino",
+                  "type": "Airport"
+                },
+                "departure": "2023-03-21T22:00:00",
+                "arrival": "2023-03-22T00:30:00",
+                "durationInMinutes": 150,
+                "flightNumber": "8334",
+                "marketingCarrier": {
+                  "id": -31669,
+                  "name": "Wizz Air",
+                  "alternate_di": "WZ"
+                },
+                "operatingCarrier": {
+                  "id": -30596,
+                  "name": "Wizz Air Malta",
+                  "alternate_di": "I*"
+                }
+              }
+            ]
+          }
+        ],
+        "pricing_options": [
+          "https://www.skyscanner.net/transport/flights/mad/fco/230321/config/13870-2303211710--31685-0-11493-2303211940?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27539793&originentityid=27544850&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+        ]
+      },
+      {
+        "id": "13870-2303211710--31685-0-11493-2303211940",
+        "legs": [
+          {
+            "id": "13870-2303211710--31685-0-11493-2303211940",
+            "origin": { "id": 13870, "name": "Madrid", "displayCode": "MAD" },
+            "destination": {
+              "id": 11493,
+              "name": "Rome Fiumicino",
+              "displayCode": "FCO"
+            },
+            "durationInMinutes": 150,
+            "stopCount": 0,
+            "isSmallestStops": true,
+            "departure": "2023-03-21T17:10:00",
+            "arrival": "2023-03-21T19:40:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [{ "id": -31685, "name": "Vueling Airlines" }],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "13870-11493-2303211710-2303211940--31685",
+                "origin": {
+                  "flightPlaceId": "MAD",
+                  "parent": {
+                    "flightPlaceId": "MAD",
+                    "name": "Madrid",
+                    "type": "City"
+                  },
+                  "name": "Madrid",
+                  "type": "Airport"
+                },
+                "destination": {
+                  "flightPlaceId": "FCO",
+                  "parent": {
+                    "flightPlaceId": "ROM",
+                    "name": "Rome",
+                    "type": "City"
+                  },
+                  "name": "Rome Fiumicino",
+                  "type": "Airport"
+                },
+                "departure": "2023-03-21T17:10:00",
+                "arrival": "2023-03-21T19:40:00",
+                "durationInMinutes": 150,
+                "flightNumber": "5236",
+                "marketingCarrier": {
+                  "id": -31685,
+                  "name": "Vueling Airlines",
+                  "alternate_di": "07"
+                },
+                "operatingCarrier": {
+                  "id": -32222,
+                  "name": "Iberia",
+                  "alternate_di": "IB",
+                  "allianceId": -32000
+                }
+              }
+            ]
+          }
+        ],
+        "pricing_options": [
+          "https://www.skyscanner.net/transport/flights/mad/fco/230321/config/13870-2303210705--32680-0-11493-2303210930?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27539793&originentityid=27544850&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+        ]
+      },
+      {
+        "id": "13870-2303210705--32680-0-11493-2303210930",
+        "legs": [
+          {
+            "id": "13870-2303210705--32680-0-11493-2303210930",
+            "origin": { "id": 13870, "name": "Madrid", "displayCode": "MAD" },
+            "destination": {
+              "id": 11493,
+              "name": "Rome Fiumicino",
+              "displayCode": "FCO"
+            },
+            "durationInMinutes": 145,
+            "stopCount": 0,
+            "isSmallestStops": true,
+            "departure": "2023-03-21T07:05:00",
+            "arrival": "2023-03-21T09:30:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [{ "id": -32680, "name": "Air Europa" }],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "13870-11493-2303210705-2303210930--32680",
+                "origin": {
+                  "flightPlaceId": "MAD",
+                  "parent": {
+                    "flightPlaceId": "MAD",
+                    "name": "Madrid",
+                    "type": "City"
+                  },
+                  "name": "Madrid",
+                  "type": "Airport"
+                },
+                "destination": {
+                  "flightPlaceId": "FCO",
+                  "parent": {
+                    "flightPlaceId": "ROM",
+                    "name": "Rome",
+                    "type": "City"
+                  },
+                  "name": "Rome Fiumicino",
+                  "type": "Airport"
+                },
+                "departure": "2023-03-21T07:05:00",
+                "arrival": "2023-03-21T09:30:00",
+                "durationInMinutes": 145,
+                "flightNumber": "1043",
+                "marketingCarrier": {
+                  "id": -32680,
+                  "name": "Air Europa",
+                  "alternate_di": "UX",
+                  "allianceId": -31998
+                },
+                "operatingCarrier": {
+                  "id": -32680,
+                  "name": "Air Europa",
+                  "alternate_di": "UX",
+                  "allianceId": -31998
+                }
+              }
+            ]
+          }
+        ],
+        "pricing_options": [
+          "https://www.skyscanner.net/transport/flights/mad/fco/230321/config/13870-2303211805--30727-0-11493-2303212035?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27539793&originentityid=27544850&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+        ]
+      },
+      {
+        "id": "13870-2303211805--30727-0-11493-2303212035",
+        "legs": [
+          {
+            "id": "13870-2303211805--30727-0-11493-2303212035",
+            "origin": { "id": 13870, "name": "Madrid", "displayCode": "MAD" },
+            "destination": {
+              "id": 11493,
+              "name": "Rome Fiumicino",
+              "displayCode": "FCO"
+            },
+            "durationInMinutes": 150,
+            "stopCount": 0,
+            "isSmallestStops": true,
+            "departure": "2023-03-21T18:05:00",
+            "arrival": "2023-03-21T20:35:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [{ "id": -30727, "name": "ITA Airways" }],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "13870-11493-2303211805-2303212035--30727",
+                "origin": {
+                  "flightPlaceId": "MAD",
+                  "parent": {
+                    "flightPlaceId": "MAD",
+                    "name": "Madrid",
+                    "type": "City"
+                  },
+                  "name": "Madrid",
+                  "type": "Airport"
+                },
+                "destination": {
+                  "flightPlaceId": "FCO",
+                  "parent": {
+                    "flightPlaceId": "ROM",
+                    "name": "Rome",
+                    "type": "City"
+                  },
+                  "name": "Rome Fiumicino",
+                  "type": "Airport"
+                },
+                "departure": "2023-03-21T18:05:00",
+                "arrival": "2023-03-21T20:35:00",
+                "durationInMinutes": 150,
+                "flightNumber": "63",
+                "marketingCarrier": {
+                  "id": -30727,
+                  "name": "ITA Airways",
+                  "alternate_di": "AZ"
+                },
+                "operatingCarrier": {
+                  "id": -30727,
+                  "name": "ITA Airways",
+                  "alternate_di": "AZ"
+                }
+              }
+            ]
+          }
+        ],
+        "pricing_options": [
+          "https://www.skyscanner.net/transport/flights/mad/fco/230321/config/13870-2303211710--32222-0-11493-2303211940?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27539793&originentityid=27544850&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+        ]
+      },
+      {
+        "id": "13870-2303211710--32222-0-11493-2303211940",
+        "legs": [
+          {
+            "id": "13870-2303211710--32222-0-11493-2303211940",
+            "origin": { "id": 13870, "name": "Madrid", "displayCode": "MAD" },
+            "destination": {
+              "id": 11493,
+              "name": "Rome Fiumicino",
+              "displayCode": "FCO"
+            },
+            "durationInMinutes": 150,
+            "stopCount": 0,
+            "isSmallestStops": true,
+            "departure": "2023-03-21T17:10:00",
+            "arrival": "2023-03-21T19:40:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [{ "id": -32222, "name": "Iberia" }],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "13870-11493-2303211710-2303211940--32222",
+                "origin": {
+                  "flightPlaceId": "MAD",
+                  "parent": {
+                    "flightPlaceId": "MAD",
+                    "name": "Madrid",
+                    "type": "City"
+                  },
+                  "name": "Madrid",
+                  "type": "Airport"
+                },
+                "destination": {
+                  "flightPlaceId": "FCO",
+                  "parent": {
+                    "flightPlaceId": "ROM",
+                    "name": "Rome",
+                    "type": "City"
+                  },
+                  "name": "Rome Fiumicino",
+                  "type": "Airport"
+                },
+                "departure": "2023-03-21T17:10:00",
+                "arrival": "2023-03-21T19:40:00",
+                "durationInMinutes": 150,
+                "flightNumber": "3234",
+                "marketingCarrier": {
+                  "id": -32222,
+                  "name": "Iberia",
+                  "alternate_di": "IB",
+                  "allianceId": -32000
+                },
+                "operatingCarrier": {
+                  "id": -32222,
+                  "name": "Iberia",
+                  "alternate_di": "IB",
+                  "allianceId": -32000
+                }
+              }
+            ]
+          }
+        ],
+        "pricing_options": [
+          "https://www.skyscanner.net/transport/flights/mad/fco/230321/config/13870-2303211655--31915-0-11493-2303211925?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27539793&originentityid=27544850&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+        ]
+      },
+      {
+        "id": "13870-2303211655--31915-0-11493-2303211925",
+        "legs": [
+          {
+            "id": "13870-2303211655--31915-0-11493-2303211925",
+            "origin": { "id": 13870, "name": "Madrid", "displayCode": "MAD" },
+            "destination": {
+              "id": 11493,
+              "name": "Rome Fiumicino",
+              "displayCode": "FCO"
+            },
+            "durationInMinutes": 150,
+            "stopCount": 0,
+            "isSmallestStops": true,
+            "departure": "2023-03-21T16:55:00",
+            "arrival": "2023-03-21T19:25:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [{ "id": -31915, "name": "Ryanair" }],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "13870-11493-2303211655-2303211925--31915",
+                "origin": {
+                  "flightPlaceId": "MAD",
+                  "parent": {
+                    "flightPlaceId": "MAD",
+                    "name": "Madrid",
+                    "type": "City"
+                  },
+                  "name": "Madrid",
+                  "type": "Airport"
+                },
+                "destination": {
+                  "flightPlaceId": "FCO",
+                  "parent": {
+                    "flightPlaceId": "ROM",
+                    "name": "Rome",
+                    "type": "City"
+                  },
+                  "name": "Rome Fiumicino",
+                  "type": "Airport"
+                },
+                "departure": "2023-03-21T16:55:00",
+                "arrival": "2023-03-21T19:25:00",
+                "durationInMinutes": 150,
+                "flightNumber": "9686",
+                "marketingCarrier": {
+                  "id": -31915,
+                  "name": "Ryanair",
+                  "alternate_di": "FR"
+                },
+                "operatingCarrier": {
+                  "id": -31915,
+                  "name": "Ryanair",
+                  "alternate_di": "FR"
+                }
+              }
+            ]
+          }
+        ],
+        "pricing_options": [
+          "https://www.skyscanner.net/transport/flights/mad/fco/230321/config/13870-2303211545--32222-0-11493-2303211815?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27539793&originentityid=27544850&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+        ]
+      },
+      {
+        "id": "13870-2303211545--32222-0-11493-2303211815",
+        "legs": [
+          {
+            "id": "13870-2303211545--32222-0-11493-2303211815",
+            "origin": { "id": 13870, "name": "Madrid", "displayCode": "MAD" },
+            "destination": {
+              "id": 11493,
+              "name": "Rome Fiumicino",
+              "displayCode": "FCO"
+            },
+            "durationInMinutes": 150,
+            "stopCount": 0,
+            "isSmallestStops": true,
+            "departure": "2023-03-21T15:45:00",
+            "arrival": "2023-03-21T18:15:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [{ "id": -32222, "name": "Iberia" }],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "13870-11493-2303211545-2303211815--32222",
+                "origin": {
+                  "flightPlaceId": "MAD",
+                  "parent": {
+                    "flightPlaceId": "MAD",
+                    "name": "Madrid",
+                    "type": "City"
+                  },
+                  "name": "Madrid",
+                  "type": "Airport"
+                },
+                "destination": {
+                  "flightPlaceId": "FCO",
+                  "parent": {
+                    "flightPlaceId": "ROM",
+                    "name": "Rome",
+                    "type": "City"
+                  },
+                  "name": "Rome Fiumicino",
+                  "type": "Airport"
+                },
+                "departure": "2023-03-21T15:45:00",
+                "arrival": "2023-03-21T18:15:00",
+                "durationInMinutes": 150,
+                "flightNumber": "3236",
+                "marketingCarrier": {
+                  "id": -32222,
+                  "name": "Iberia",
+                  "alternate_di": "IB",
+                  "allianceId": -32000
+                },
+                "operatingCarrier": {
+                  "id": -32222,
+                  "name": "Iberia",
+                  "alternate_di": "IB",
+                  "allianceId": -32000
+                }
+              }
+            ]
+          }
+        ],
+        "pricing_options": [
+          "https://www.skyscanner.net/transport/flights/mad/fco/230321/config/13870-2303211805--32680-0-11493-2303212035?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27539793&originentityid=27544850&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+        ]
+      },
+      {
+        "id": "13870-2303211805--32680-0-11493-2303212035",
+        "legs": [
+          {
+            "id": "13870-2303211805--32680-0-11493-2303212035",
+            "origin": { "id": 13870, "name": "Madrid", "displayCode": "MAD" },
+            "destination": {
+              "id": 11493,
+              "name": "Rome Fiumicino",
+              "displayCode": "FCO"
+            },
+            "durationInMinutes": 150,
+            "stopCount": 0,
+            "isSmallestStops": true,
+            "departure": "2023-03-21T18:05:00",
+            "arrival": "2023-03-21T20:35:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [{ "id": -32680, "name": "Air Europa" }],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "13870-11493-2303211805-2303212035--32680",
+                "origin": {
+                  "flightPlaceId": "MAD",
+                  "parent": {
+                    "flightPlaceId": "MAD",
+                    "name": "Madrid",
+                    "type": "City"
+                  },
+                  "name": "Madrid",
+                  "type": "Airport"
+                },
+                "destination": {
+                  "flightPlaceId": "FCO",
+                  "parent": {
+                    "flightPlaceId": "ROM",
+                    "name": "Rome",
+                    "type": "City"
+                  },
+                  "name": "Rome Fiumicino",
+                  "type": "Airport"
+                },
+                "departure": "2023-03-21T18:05:00",
+                "arrival": "2023-03-21T20:35:00",
+                "durationInMinutes": 150,
+                "flightNumber": "3119",
+                "marketingCarrier": {
+                  "id": -32680,
+                  "name": "Air Europa",
+                  "alternate_di": "UX",
+                  "allianceId": -31998
+                },
+                "operatingCarrier": {
+                  "id": -30727,
+                  "name": "ITA Airways",
+                  "alternate_di": "AZ"
+                }
+              }
+            ]
+          }
+        ],
+        "pricing_options": [
+          "https://www.skyscanner.net/transport/flights/mad/fco/230321/config/13870-2303211125--32222-0-11493-2303211355?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27539793&originentityid=27544850&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+        ]
+      },
+      {
+        "id": "13870-2303211125--32222-0-11493-2303211355",
+        "legs": [
+          {
+            "id": "13870-2303211125--32222-0-11493-2303211355",
+            "origin": { "id": 13870, "name": "Madrid", "displayCode": "MAD" },
+            "destination": {
+              "id": 11493,
+              "name": "Rome Fiumicino",
+              "displayCode": "FCO"
+            },
+            "durationInMinutes": 150,
+            "stopCount": 0,
+            "isSmallestStops": true,
+            "departure": "2023-03-21T11:25:00",
+            "arrival": "2023-03-21T13:55:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [{ "id": -32222, "name": "Iberia" }],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "13870-11493-2303211125-2303211355--32222",
+                "origin": {
+                  "flightPlaceId": "MAD",
+                  "parent": {
+                    "flightPlaceId": "MAD",
+                    "name": "Madrid",
+                    "type": "City"
+                  },
+                  "name": "Madrid",
+                  "type": "Airport"
+                },
+                "destination": {
+                  "flightPlaceId": "FCO",
+                  "parent": {
+                    "flightPlaceId": "ROM",
+                    "name": "Rome",
+                    "type": "City"
+                  },
+                  "name": "Rome Fiumicino",
+                  "type": "Airport"
+                },
+                "departure": "2023-03-21T11:25:00",
+                "arrival": "2023-03-21T13:55:00",
+                "durationInMinutes": 150,
+                "flightNumber": "3232",
+                "marketingCarrier": {
+                  "id": -32222,
+                  "name": "Iberia",
+                  "alternate_di": "IB",
+                  "allianceId": -32000
+                },
+                "operatingCarrier": {
+                  "id": -32222,
+                  "name": "Iberia",
+                  "alternate_di": "IB",
+                  "allianceId": -32000
+                }
+              }
+            ]
+          }
+        ],
+        "pricing_options": [
+          "https://www.skyscanner.net/transport/flights/mad/fco/230321/config/13870-2303210705--30727-0-11493-2303210930?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27539793&originentityid=27544850&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+        ]
+      },
+      {
+        "id": "13870-2303210705--30727-0-11493-2303210930",
+        "legs": [
+          {
+            "id": "13870-2303210705--30727-0-11493-2303210930",
+            "origin": { "id": 13870, "name": "Madrid", "displayCode": "MAD" },
+            "destination": {
+              "id": 11493,
+              "name": "Rome Fiumicino",
+              "displayCode": "FCO"
+            },
+            "durationInMinutes": 145,
+            "stopCount": 0,
+            "isSmallestStops": true,
+            "departure": "2023-03-21T07:05:00",
+            "arrival": "2023-03-21T09:30:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [{ "id": -30727, "name": "ITA Airways" }],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "13870-11493-2303210705-2303210930--30727",
+                "origin": {
+                  "flightPlaceId": "MAD",
+                  "parent": {
+                    "flightPlaceId": "MAD",
+                    "name": "Madrid",
+                    "type": "City"
+                  },
+                  "name": "Madrid",
+                  "type": "Airport"
+                },
+                "destination": {
+                  "flightPlaceId": "FCO",
+                  "parent": {
+                    "flightPlaceId": "ROM",
+                    "name": "Rome",
+                    "type": "City"
+                  },
+                  "name": "Rome Fiumicino",
+                  "type": "Airport"
+                },
+                "departure": "2023-03-21T07:05:00",
+                "arrival": "2023-03-21T09:30:00",
+                "durationInMinutes": 145,
+                "flightNumber": "7115",
+                "marketingCarrier": {
+                  "id": -30727,
+                  "name": "ITA Airways",
+                  "alternate_di": "AZ"
+                },
+                "operatingCarrier": {
+                  "id": -32680,
+                  "name": "Air Europa",
+                  "alternate_di": "UX",
+                  "allianceId": -31998
+                }
+              }
+            ]
+          }
+        ],
+        "pricing_options": [
+          {
+            "agents": [
+              {
+                "id": "ctuk",
+                "name": "Trip.com",
+                "is_carrier": false,
+                "update_status": "pending",
+                "optimised_for_mobile": true,
+                "live_update_allowed": true,
+                "rating_status": "available",
+                "rating": 4.17,
+                "feedback_count": 66214,
+                "rating_breakdown": {
+                  "reliable_prices": 4.124404,
+                  "clear_extra_fees": 4.63632,
+                  "customer_service": 4.995664,
+                  "ease_of_booking": 4.537116,
+                  "other": 3.381736
+                }
+              }
+            ],
+            "price": {
+              "amount": 212.66,
+              "update_status": "pending",
+              "last_updated": "2023-03-16T18:41:27",
+              "quote_age": 246
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
