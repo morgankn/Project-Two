@@ -28,7 +28,7 @@
     color: var(--bright);
     display: flex;
     justify-content: space-around;
-    font-size: 35px;
+    font-size: 40px;
   }
   #title {
     color: var(--teal);
@@ -37,10 +37,24 @@
     font-size: 20px;
   }
 
-  #poster{
-    display: flex;
-    justify-content: space-around;
-    border: 2px solid var(--cream);
+  img {
+    /* height: 500px;
+    width: 300px; */
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+  }
+  .description {
+    width: 750px;
+    border: 4px solid var(--cyan);
+    padding: 5px;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--cream);
+    font-size: 18px;
+    
   }
 
   .create-container {
@@ -50,8 +64,17 @@
     align-items: center;
     
   }
+  .box {
+    display: flex;
+  }
   .container {
     display: flex;
     justify-content: space-around;
     border: 2px solid var(--cream);
+  }
+
+  .btn {
+    color: var(--bright);
+    /* border: 2px solid var(--brown); */
+    background-color: var(--brown);
   }
