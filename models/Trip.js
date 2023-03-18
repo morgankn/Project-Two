@@ -15,7 +15,7 @@ Trip.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
+    destination: {
       type: DataTypes.STRING,
     },
     date_created: {

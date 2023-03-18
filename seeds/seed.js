@@ -22,7 +22,7 @@ const seedDatabase = async () => {
   }
   await Trip.create({
     name: 'Los Angeles Bacholerette',
-    description: 'Bacholerette',
+    destination: 'Los Angeles',
     userId: 1,
     flightId: 1,
   }).catch((err) => {
@@ -31,7 +31,7 @@ const seedDatabase = async () => {
 
   await Trip.create({
     name: 'Miami Wedding',
-    description: 'Wedding',
+    destination: 'Miami',
     user_id: 2,
     flight_id: 2,
   }).catch((err) => {
@@ -40,7 +40,7 @@ const seedDatabase = async () => {
 
   await Trip.create({
     name: 'Chicago Baseball Game',
-    description: 'Baseball Game',
+    destination: 'Chicago',
     user_id: 3,
     flight_id: 3,
   }).catch((err) => {

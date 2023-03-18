@@ -9,13 +9,14 @@ router.get('/', async (req, res) => {
   });
 });
 
-router.get('/flightinfo', async (req, res) => {
-  res.render('flightinfo', {
-    loggedIn: req.session.loggedIn,
-  });
+router.get('/flightInfo', async (req, res) => {
+  res.render(
+    'flightInfo' // {
+    // loggedIn: req.session.loggedIn,}
+  );
 });
 
-router.get('/login', async (req, res) => {
+router.get('/api/users/login', async (req, res) => {
   res.render('login');
 });
 router.get('/search', authChecker, async (req, res) => {
@@ -71,6 +72,5 @@ router.get('/dashboard', async (req, res) => {
   res.render('dashboard', {
     loggedIn: req.session.loggedIn,
   });
-  
 });
 module.exports = router;
