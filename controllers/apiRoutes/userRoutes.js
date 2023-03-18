@@ -2,7 +2,8 @@ const router = require('express').Router();
 const { User, Flight, Trip } = require('../../models');
 
 // localhost:3001/api/users
-router.post('/', async (req, res) => {
+// creating a new user
+router.post('/signup', async (req, res) => {
   console.log('trying to signup');
   const { username, password, email } = req.body;
   if (!username || !password || !email) {
@@ -71,6 +72,51 @@ router.post('/login', async (req, res) => {
     res.status(500).json(err);
   }
 });
+// taken from Dan's apiroutes/index.js
+// router.post('/login', async (req, res) => {
+//   try {
+//     const dbUser = await User.findOne({
+//       where: {
+//         email: req.body.email,
+//       },
+//     });
+
+//     if (!dbUser) {
+//       return res
+//         .status(404)
+//         .json({ message: "Get outta here. I don't know you" });
+//     }
+
+//     const isValidPassword = await dbUser.comparePassword(req.body.password);
+
+//     if (!isValidPassword) {
+//       return res.status(404).json({ message: 'Wrong password' });
+//     }
+
+//     req.session.save(() => {
+//       req.session.loggedIn = true;
+//       return res
+//         .status(200)
+//         .json({ message: "You're the best. I'm so proud of you!" });
+//     });
+//   } catch (error) {
+//     return res.status(500).json({ message: 'You screwed it up' });
+//   }
+// });
+
+// router.post('/signup', async (req, res) => {
+//   try {
+//     const dbUser = await User.create(req.body);
+//     const plainUser = dbUser.get({ plain: true });
+
+//     req.session.save(() => {
+//       req.session.loggedIn = true;
+//       res.status(201).json(plainUser);
+//     });
+//   } catch (error) {
+//     res.status(500).json({ message: 'You screwed it up' });
+//   }
+// });
 
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {

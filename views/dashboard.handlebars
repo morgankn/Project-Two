@@ -1,14 +1,21 @@
-<div class="container">
-<div class="row">
-
-{{#each flight}}
-<div class="card col-3" style="width: 18rem;">
-  <img src={{this.image}} class="card-img-top" alt="...">
-  <div class="card-body">
-    {{!-- <p class="card-title">{{this.origin}}</p>
-    <p class="card-text">{{this.arrival}}</p> --}}
+<div class="box">
+<div>
+<div class="row justify-space-between-md">
+  <div class="login-card container">
+    <h2 class="page-title">New Trip</h2>
+    <form id="trip-form"class="form">
+      <div class="form-group">
+        <label for="email-login">Trip Name:</label>
+        <input id="trip-name"class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+      </div>
+      <div class="form-group">
+        <label for="password-login">Destination:</label>
+        <input id="destination"class="form-control" type="text" placeholder="Default input">
+      </div>
+      <div class="form-group">
+        <button id="create-trip" class="btn btn-primary" type="submit">Create Trip</button>
+      </div>
+    </form>
   </div>
-</div>
-{{/each}}
-</div>
-</div>
+  </div>
+<script src="/js/dashboard.js"></script>

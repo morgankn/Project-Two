@@ -2,6 +2,7 @@ const signupForm = document.querySelector('.signup-form');
 const loginForm = document.querySelector('.login-form');
 
 async function handleSignup(event) {
+  console.log('signup button');
   event.preventDefault();
 
   const userNameValue = document.querySelector('#username-signup').value.trim();
@@ -32,6 +33,7 @@ async function handleSignup(event) {
 }
 
 async function handleLogin(event) {
+  console.log('login button?');
   event.preventDefault();
 
   const emailValue = document.querySelector('#email-login').value.trim();
@@ -52,7 +54,7 @@ async function handleLogin(event) {
 
   if (response.ok) {
     console.log('IT WORKED!');
-    document.location.replace('/flightinfo');
+    document.location.replace('/dashboard');
   } else {
     console.log('Dan, you screwed it up again');
   }
