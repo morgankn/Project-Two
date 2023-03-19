@@ -7,4 +7,35 @@ for (let i = 0; i < elem.length; i++) {
   j++;
 }
 
-const modalIfno = document.querySelectorAll("")
+const addFlightBtn = document.querySelector('#add-flight');
+async function createFlight(event) {
+  event.preventDefault();
+
+  const departureText = document.querySelector('#departure').textContent;
+  const arrivalText = document.querySelector('#arrival').textContent;
+  const arrivalTimeText = document.querySelector('#arrival-time').textContent;
+  const priceText = document.querySelector('#price').textContent;
+  const newFlight = {
+    departure: departureText,
+    arrival: arrivalText,
+    arrivalTime: arrivalTimeText,
+    price: priceText,
+  };
+  console.log(newFlight);
+  const response = await fetch('/api/flights/create', {
+    body: JSON.stringify(newFlight),
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+    },
+  });
+
+  if (response.ok) {
+    console.log('createFlight WORKED!');
+    document.location.replace('/dashboard');
+  } else {
+    console.log('createFlight screwed up again');
+  }
+}
+
+addFlightBtn.addEventListener('click', createFlight);
