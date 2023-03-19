@@ -1,76 +1,59 @@
 <div class="create-container">
-    <h2>Create A Group Travel Plan</h2>
-    <div class="dropdown-center">
-  {{!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Where are you going?
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" data-code='ALB' href="#">Albany</a></li>
-    <li><a class="dropdown-item" href="#">ABQ</a></li>
-    <li><a class="dropdown-item" href="#">ANC</a></li>
-    <li><a class="dropdown-item" href="#">AVL</a></li>
-    <li><a class="dropdown-item" href="#">DFW</a></li>
-    <li><a class="dropdown-item" href="#">DEN</a></li>
-    <li><a class="dropdown-item" href="#">ATL</a></li>
-    <li><a class="dropdown-item" href="#">DFW</a></li>
-    <li><a class="dropdown-item" href="#">DEN</a></li>
-  </ul>
-</div>
-     <div class="dropdown-center">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Where are flying from?
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">ALB</a></li>
-    <li><a class="dropdown-item" href="#">ABQ</a></li>
-    <li><a class="dropdown-item" href="#">ANC</a></li>
-    <li><a class="dropdown-item" href="#">AVL</a></li>
-    <li><a class="dropdown-item" href="#">DFW</a></li>
-    <li><a class="dropdown-item" href="#">DEN</a></li>
-    <li><a class="dropdown-item" href="#">ATL</a></li>
-    <li><a class="dropdown-item" href="#">DFW</a></li>
-    <li><a class="dropdown-item" href="#">DEN</a></li>
-  </ul>
-</div> --}}
+    <h2>Create a Flight</h2>
 <label for="departure-select">Departing From:</label>
 
 <select id="departure">
-    <option value="kdkjdfdjkdsfjkh">--Please choose an option--</option>
-    <option value="ALB" class="data-code=ALB">ALB</option>
-    <option value="MAD">MAD</option>
-    <option value="PHL">PHL</option>
+    <option>--Please choose a city--</option>
+     <option value="ABQ" class="data-code=ABQ">Albuquerque</option>
+    <option value="ATL" class="data-code=ATL">Atlanta</option>
+    <option value="DFW" class="data-code=DFW">Dallas</option>
+    <option value="DEN" class="data-code=DEN">Denver</option>
+    <option value="ATL" class="data-code=ATL">Atlanta</option>
+    <option value="ORD" class="data-code=ORD">Chicago</option>
+    <option value="LAX" class="data-code=LAX">Los Angeles</option>
+    <option value="MCO" class="data-code=MCO">Orlando</option>
+    <option value="LAS" class="data-code=LAS">Las Vegas</option>
+    <option value="MIA" class="data-code=MIA">Miami</option>
+    <option value="PHX" class="data-code=PHX">Phoenix</option>
+    <option value="SEA" class="data-code=SEA">Seattle</option>
+    <option value="IAH" class="data-code=IAH">Houston</option>
+    <option value="JFK" class="data-code=JFK">New York City</option>
+    <option value="PHL" class="data-code=IAH">Philadelphia</option>
+    <option value="SFO" class="data-code=SFO">San Francisco</option>
+    <option value="BOS" class="data-code=BOS">Boston</option>
 
-    {{!-- <option value="cat">Cat</option>
-    <option value="hamster">Hamster</option>
-    <option value="parrot">Parrot</option>
-    <option value="spider">Spider</option>
-    <option value="goldfish">Goldfish</option> --}}
 </select>
-<label for="arrival-select">Arriving To:</label>
+<label for="arrival-select">Destination:</label>
 
 <select id="arrival">
     <option value="">--Please choose an option--</option>
-    <option value="ABQ" class="data-code=ABQ">ABQ</option>
-    <option value="FCO">FCO</option>
-    <option value="ORD">ORD</option>
-    {{!-- <option value="hamster">Hamster</option>
-    <option value="parrot">Parrot</option>
-    <option value="spider">Spider</option>
-    <option value="goldfish">Goldfish</option> --}}
+    <option value="ABQ" class="data-code=ABQ">Albuquerque</option>
+    <option value="ATL" class="data-code=ATL">Atlanta</option>
+    <option value="DFW" class="data-code=DFW">Dallas</option>
+    <option value="DEN" class="data-code=DEN">Denver</option>
+    <option value="ATL" class="data-code=ATL">Atlanta</option>
+    <option value="ORD" class="data-code=ORD">Chicago</option>
+    <option value="LAX" class="data-code=LAX">Los Angeles</option>
+    <option value="MCO" class="data-code=MCO">Orlando</option>
+    <option value="LAS" class="data-code=LAS">Las Vegas</option>
+    <option value="MIA" class="data-code=MIA">Miami</option>
+    <option value="PHX" class="data-code=PHX">Phoenix</option>
+    <option value="SEA" class="data-code=SEA">Seattle</option>
+    <option value="IAH" class="data-code=IAH">Houston</option>
+    <option value="JFK" class="data-code=JFK">New York City</option>
+    <option value="PHL" class="data-code=IAH">Philadelphia</option>
+    <option value="SFO" class="data-code=SFO">San Francisco</option>
+    <option value="BOS" class="data-code=BOS">Boston</option>
+
 </select>
-<label for="departure-date-">Arriving To:</label>
+<label for="departure-date-">Arrival Date:</label>
 
 <select id="departure-date">
     <option value="">--Please choose an option--</option>
     <option value="2023-03-26" class="data-code=ABQ">2023-03-26</option>
    
-    {{!-- <option value="hamster">Hamster</option>
-    <option value="parrot">Parrot</option>
-    <option value="spider">Spider</option>
-    <option value="goldfish">Goldfish</option> --}}
 </select>
 <button id="find-button" class="find-button">Find Flights</button>
-<button id="example-button" class="button">Example Empty</button>
 </div>
 <script
       src="/js/search.js"></script>
