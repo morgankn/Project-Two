@@ -59,6 +59,7 @@ router.get('/search', authChecker, async (req, res) => {
 
   res.render('searchResults', {
     flights: flightResponse.data.data.buckets,
+    logged_in: req.session.logged_in,
   });
 });
 
