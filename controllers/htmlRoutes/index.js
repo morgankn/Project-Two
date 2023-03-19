@@ -5,13 +5,15 @@ const authChecker = require('../../utils/auth.js');
 
 router.get('/', async (req, res) => {
   res.render('home', {
-    loggedIn: req.session.loggedIn,
+    logged_in: req.session.logged_in,
+    userId: req.session.user_id,
   });
 });
 
 router.get('/flightInfo', async (req, res) => {
   res.render('flightInfo', {
     logged_in: req.session.logged_in,
+    userId: req.session.user_id,
   });
 });
 
@@ -60,6 +62,7 @@ router.get('/search', authChecker, async (req, res) => {
   res.render('searchResults', {
     flights: flightResponse.data.data.buckets,
     logged_in: req.session.logged_in,
+    userId: req.session.user_id,
   });
 });
 
@@ -71,6 +74,7 @@ router.get('/logout', async (req, res) => {
 router.get('/dashboard', async (req, res) => {
   res.render('dashboard', {
     logged_in: req.session.logged_in,
+    userId: req.session.user_id,
   });
 });
 module.exports = router;
