@@ -1,22 +1,35 @@
+    {{#each flights as |flight|}
+    <div class="container-box">
 
-    {{#each flights as |flight|}}
+      {{!-- <div class="flight-card"> --}}
+      {{!-- <div class="flight-card-header"> --}}
+    {{!-- <div class="container-box"> --}}
+
+
     {{!-- parent --}}
       <div class="flight-card">
       <div class="flight-card-header">
       {{#each flight.items as |item|}}
-          {{!-- <pre>{{json item}}</pre> --}}
+            <div class="flight-card">
+
+            {{!-- <div class="flight-card-header"> --}}
           {{#each item.legs as |leg|}}
             {{#each leg.carriers.marketing as |marketing|}}
             <p>{{marketing.name}}</p>
-            <img src={{marketing.logoUrl}}></img>
+            <img class="flight-img" src={{marketing.logoUrl}}></img>
             {{/each}}
+
+            <p>{{leg.arrival}}<p>
+            {{!-- </div> --}}
+            {{!-- <div class="card-body"> --}}
+
             <p><span datas2 = "display">{{leg.arrival}}</span><p>
             </div>
             <div class="card-body">
+
               <p>
                 Description:
               {{leg.destination.name}}
-                
               </p>
               <p>
                 Origin:
@@ -30,11 +43,10 @@
         </div>
       {{/each}}
     {{/each}}
+</div>
 
 
-
-
-{{#each flights as |flight|}}
+{{!-- {{#each flights as |flight|}}
     {{#each flight.items as |item|}}
         
         <p>{{item.id}}</p>
@@ -42,7 +54,7 @@
         <p>{{leg.arrival}}</p>
         {{/each}}
     {{/each}}
-{{/each}}
+{{/each}} --}}
 
 <div id="box">
    <div id="water">

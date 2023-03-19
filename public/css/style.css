@@ -38,8 +38,6 @@
   }
 
   img {
-    /* height: 500px;
-    width: 300px; */
     max-width: 100%;
     height: auto;
     width: auto\9;
@@ -59,7 +57,7 @@
 
   .create-container {
     display: flex;
-    background-color: var(--cyan);
+    background-color: var(--gold);
     color: var(--chestnut);
     align-items: center;
     
@@ -77,4 +75,26 @@
     color: var(--bright);
     /* border: 2px solid var(--brown); */
     background-color: var(--brown);
+  }
+
+  .flight-card {
+    border: 2px solid var(--teal);
+    background-color: var(--cream);
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; */
+  }
+  .flight-img {
+    max-width:25px;
+    max-height: 25px;
+  }
+
+  .container-box {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 2px solid var(--teal);
+    background-color: var(--cream);
   }
