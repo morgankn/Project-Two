@@ -10,10 +10,9 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/flightInfo', async (req, res) => {
-  res.render(
-    'flightInfo' // {
-    // loggedIn: req.session.loggedIn,}
-  );
+  res.render('flightInfo', {
+    logged_in: req.session.logged_in,
+  });
 });
 
 router.get('/api/users/login', async (req, res) => {
