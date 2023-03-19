@@ -70,7 +70,7 @@ router.get('/logout', async (req, res) => {
 
 router.get('/dashboard', async (req, res) => {
   res.render('dashboard', {
-    loggedIn: req.session.loggedIn,
+    logged_in: req.session.logged_in,
   });
 });
 module.exports = router;
