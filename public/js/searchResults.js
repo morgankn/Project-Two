@@ -7,8 +7,4 @@ for (let i = 0; i < elem.length; i++) {
   j++;
 }
 
-// elem.addEventListener('click', () => {
-
-// })
-
-    
+const modalIfno = document.querySelectorAll("")

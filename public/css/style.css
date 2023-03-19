@@ -80,6 +80,7 @@
   .flight-card {
     border: 2px solid var(--teal);
     background-color: var(--cream);
+    padding: 5px;
     /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -95,6 +96,6 @@
     flex-wrap:wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    border: 2px solid var(--teal);
-    background-color: var(--cream);
+    /* border: 2px solid var(--teal);
+    background-color: var(--cream); */
   }
