@@ -1,4 +1,4 @@
-    {{#each flights as |flight|}
+    {{#each flights as |flight|}}
     <div class="container-box">
 
       {{!-- <div class="flight-card"> --}}
@@ -56,28 +56,6 @@
     {{/each}}
 {{/each}} --}}
 
-<div id="box">
-   <div id="water">
-    <p>Have you had water today? </p>
-  <div class="button-group align-center">
-      <a class="button" data-open="yesModall"><i class="fa-solid fa-thumbs-up"></i></a>
-    <div class="tiny reveal" id="yesModall" data-reveal>
-      <h2 id="yes">Way to Go!</h2>
-      <p class="lead">Keep it up!</p>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-  </div>
-    <a class="button" data-open="noModall"><i class="fa-solid fa-thumbs-down"></i></a>
-    <div class="tiny reveal" id="noModall" data-reveal>
-      <h2 id="no">Go drink some water!</h2>
-      <p class="lead">Make sure you get at least 8 glasses</p>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-  </div>
-  </div>
 
 <script
       src="/js/searchResults.js"></script>
