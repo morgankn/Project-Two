@@ -34,7 +34,7 @@ async function createFlight(event) {
 
   if (response.ok) {
     console.log('createFlight WORKED!');
-    document.location.replace('/dashboard');
+    document.location.replace('/flightinfo');
   } else {
     console.log('createFlight screwed up again');
   }

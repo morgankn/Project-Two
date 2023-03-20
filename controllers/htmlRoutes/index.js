@@ -77,4 +77,11 @@ router.get('/dashboard', async (req, res) => {
     userId: req.session.user_id,
   });
 });
+
+router.get('/fakepresentationdashboard', async (req, res) => {
+  res.render('fakepresentationdashboard', {
+    logged_in: req.session.logged_in,
+  });
+});
+
 module.exports = router;

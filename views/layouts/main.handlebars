@@ -42,7 +42,10 @@
           <a class="nav-link" href="/flightInfo">Search for Flights</a>
           {{#if logged_in}}
           <a class="nav-link" href="/logout" id="logout">Logout</a>
-          <a id="{{userId}}" class="nav-link user-id" href="/profile">See My Trips</a>
+
+          <a class="nav-link" href="/fakepresentationdashboard">See My Trips</a>
+          <a class="nav-link" href="/hotels">Hotel Reservations</a>
+    
           {{else}}
           <a class="nav-link" href="/api/users/login">Login/Sign-up</a>
           {{/if}}
