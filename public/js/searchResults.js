@@ -15,11 +15,13 @@ async function createFlight(event) {
   const arrivalText = document.querySelector('#arrival').textContent;
   const arrivalTimeText = document.querySelector('#arrival-time').textContent;
   const priceText = document.querySelector('#price').textContent;
+  const userId = document.querySelector('.user-id').id;
   const newFlight = {
     departure: departureText,
     arrival: arrivalText,
     arrivalTime: arrivalTimeText,
     price: priceText,
+    user_id: userId,
   };
   console.log(newFlight);
   const response = await fetch('/api/flights/create', {

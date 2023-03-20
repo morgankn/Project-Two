@@ -3,18 +3,21 @@
         "departure": "Philadelphia",
         "arrival": "Los Angeles",
         "arrivalTime": "2023-03-21T12:48:00",
-        "price": "300"
+        "price": "300",
+        "user_id": 1
     },
     {
         "departure": "New York",
         "arrival": "Miami",
         "arrivalTime": "2023-03-21T13:48:00",
-        "price": "200"
+        "price": "200",
+        "user_id": 2
     },
     {
         "departure": "Nashville",
         "arrival": "Chicago",
         "arrivalTime": "2023-03-21T12:48:00",
-        "price": "200"
+        "price": "200",
+        "user_id": 3
     }
 ]
