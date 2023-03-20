@@ -39,7 +39,7 @@
 
   img {
     max-width: 100%;
-    height: auto;
+    height: 500px;
     width: auto\9;
   }
   .description {
@@ -64,6 +64,8 @@
   }
   .box {
     display: flex;
+    padding: 15px;
+    justify-content: space-around;
   }
   .container {
     display: flex;
