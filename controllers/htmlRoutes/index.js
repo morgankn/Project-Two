@@ -73,4 +73,11 @@ router.get('/dashboard', async (req, res) => {
     logged_in: req.session.logged_in,
   });
 });
+
+router.get('/fakepresentationdashboard', async (req, res) => {
+  res.render('fakepresentationdashboard', {
+    logged_in: req.session.logged_in,
+  });
+});
+
 module.exports = router;
