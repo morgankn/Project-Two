@@ -25,6 +25,7 @@ async function handleSignup(event) {
 
   if (response.ok) {
     console.log('IT WORKED!');
+    document.location.replace('/dashboard');
   } else {
     console.log('Dan, you screwed it up again');
   }
