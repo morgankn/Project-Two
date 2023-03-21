@@ -19,6 +19,11 @@ Go visit the live app.
 ## Usage
 Just log in and follow the easy prompts.  From the choices of flights given to you upon your parameters, add the best flighttime to your trip so that you and your party members arrive together.  Once the flights have been chosen and added to the trip, all members can view the finished trip.
 
+![Flight Info Page ](assets/images/Screenshot%202023-03-20%20at%209.11.34%20PM.png)
+![Dashboard](assets/images/Screenshot%202023-03-20%20at%209.14.24%20PM.png)
+![Search Results ](assets/images/Screenshot%202023-03-20%20at%209.15.31%20PM.png)
+
+
 ## Contribution
 Spread the word
 
@@ -37,5 +42,10 @@ None
   [fredrickj.chang@gmail.com](mailto:fredrickj.chang@gmail.com)
 
 
+
+
+
 ## License
 This project is under the MIT license
+
+https://enigmatic-inlet-20421.herokuapp.com/
